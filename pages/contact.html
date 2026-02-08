@@ -1,1 +1,172 @@
-<!-- Your pages/contact.html content goes here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EightySix Strategies</title>
+    <meta name="description" content="Get in touch with EightySix Strategies. Let's discuss how we can help grow your business with our digital marketing and growth solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jem86.com/contact">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=a07d2bfc-70a3-4a55-aca5-2a9425b35757"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'a07d2bfc-70a3-4a55-aca5-2a9425b35757');
+    </script>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - EightySix Strategies" />
+    <meta property="og:description" content="Get in touch with EightySix Strategies. Let's discuss how we can help grow your business." />
+    <meta property="og:url" content="https://jem86.com/contact" />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">EightySix Strategies</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/who-we-help">Who We Help</a></li>
+                <li><a href="/why-us">Why Us</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="section-subtitle">Let's discuss how we can help your business grow</p>
+            
+            <!-- Netlify Form -->
+            <!-- The 'netlify' attribute enables Netlify Forms processing -->
+            <!-- The 'name' attribute identifies the form in Netlify dashboard -->
+            <form name="contact" method="POST" class="contact-form" netlify netlify-honeypot="bot-field">
+                <!-- Hidden field for bot detection -->
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                
+                <!-- Success/Error Messages -->
+                <div id="form-message" class="form-message"></div>
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="Your Company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(401) 487-1587">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service Interest</label>
+                    <select id="service" name="service" style="width: 100%; padding: 0.75rem; border: 2px solid #e2e8f0; border-radius: 8px; font-family: inherit; font-size: 1rem;">
+                        <option value="">Select a service...</option>
+                        <option value="digital-strategy">Digital Strategy</option>
+                        <option value="performance-marketing">Performance Marketing</option>
+                        <option value="growth-optimization">Growth Optimization</option>
+                        <option value="brand-development">Brand Development</option>
+                        <option value="social-media">Social Media Management</option>
+                        <option value="seo-content">SEO & Content Marketing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your project or goals..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+            
+            <!-- Additional Contact Information -->
+            <div style="margin-top: 3rem; text-align: center;">
+                <h2 style="margin-bottom: 1rem;">Other Ways to Reach Us</h2>
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Email:</strong> <a href="mailto:james@eightysixstrategies.com">james@eightysixstrategies.com</a>
+                </p>
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Phone:</strong> <a href="tel:+14014871587">(401) 487-1587</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EightySix Strategies</h3>
+                    <p>Your partner in digital growth and strategic marketing solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/who-we-help">Who We Help</a></li>
+                        <li><a href="/why-us">Why Us</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:james@eightysixstrategies.com">james@eightysixstrategies.com</a></p>
+                    <p>Phone: <a href="tel:+14014871587">(401) 487-1587</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 EightySix Strategies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

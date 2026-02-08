@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+# Sitemap location
+Sitemap: https://jem86.com/sitemap.xml
