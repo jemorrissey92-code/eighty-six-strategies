@@ -1,6 +1,6 @@
-# Eighty Six Strategies
+# EightySix Strategies
 
-A modern, production-ready website for Eighty Six Strategies - a digital growth and marketing solutions company. This website is optimized for deployment on Netlify with comprehensive features including Netlify Forms, Google Analytics integration, and enterprise-grade security headers.
+A modern, production-ready website for EightySix Strategies - a digital growth and marketing solutions company. This website is optimized for deployment on Netlify with comprehensive features including Netlify Forms, Google Analytics integration, and enterprise-grade security headers.
 
 ## 🚀 Live Demo
 
@@ -23,7 +23,7 @@ Deploy this site to Netlify: [![Deploy to Netlify](https://www.netlify.com/img/d
 
 ## 🎯 Overview
 
-Eighty Six Strategies is a fully-featured, static website designed for a digital marketing and growth solutions company. The site includes:
+EightySix Strategies is a fully-featured, static website designed for a digital marketing and growth solutions company. The site includes:
 
 - Modern, responsive design
 - Full Netlify integration (Forms, Headers, Redirects)
@@ -136,8 +136,8 @@ Search for and replace these placeholder URLs throughout the site:
 Update contact details in:
 - `index.html` (footer section)
 - `pages/contact.html`
-- Replace `info@eightysixstrategies.com` with your email
-- Replace `(123) 456-7890` with your phone number
+- Replace `james@eightysixstrategies.com` with your email
+- Replace `(401) 487-1587` with your phone number
 
 #### Social Media Links
 Update social media links in footer sections:
@@ -216,7 +216,7 @@ Replace the text logo in the navigation:
 ```html
 <!-- Current text logo -->
 <div class="nav-brand">
-    <a href="/">Eighty Six Strategies</a>
+    <a href="/">EightySix Strategies</a>
 </div>
 
 <!-- Replace with image logo -->
@@ -369,7 +369,7 @@ After deployment, you should see:
 
 For each page, update:
 ```html
-<title>Your Page Title - Eighty Six Strategies</title>
+<title>Your Page Title - EightySix Strategies</title>
 <meta name="description" content="Your unique page description...">
 <link rel="canonical" href="https://yourdomain.com/page">
 ```
@@ -421,7 +421,7 @@ The site uses progressive enhancement:
 
 ## 📝 License
 
-© 2026 Eighty Six Strategies. All rights reserved.
+© 2026 EightySix Strategies. All rights reserved.
 
 ## 🤝 Contributing
 
@@ -430,8 +430,8 @@ This is a private project. For questions or suggestions, contact the development
 ## 📞 Support
 
 For technical support or questions:
-- Email: info@eightysixstrategies.com
-- Phone: (123) 456-7890
+- Email: james@eightysixstrategies.com
+- Phone: (401) 487-1587
 
 ---
 
