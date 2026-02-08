@@ -1,0 +1,114 @@
+# Netlify Configuration for Eighty Six Strategies
+# Documentation: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Directory to serve the site from (root directory for static sites)
+  publish = "."
+  
+  # Command to run before deployment (not needed for static sites)
+  # command = "echo 'No build command needed for static site'"
+
+# Redirect rules for clean URLs
+# Documentation: https://docs.netlify.com/routing/redirects/
+[[redirects]]
+  from = "/services"
+  to = "/pages/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/pages/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/pages/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/why-us"
+  to = "/pages/why-us.html"
+  status = 200
+
+[[redirects]]
+  from = "/who-we-help"
+  to = "/pages/who-we-help.html"
+  status = 200
+
+# Custom 404 page (customize this page as needed)
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Security and Performance Headers
+# These headers enhance security and performance across all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Content Security Policy - Customize 'GA_MEASUREMENT_ID' with your actual Google Analytics ID
+    # This policy allows scripts from Google Analytics and inline scripts
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: https:;
+      font-src 'self' data:;
+      connect-src 'self' https://www.google-analytics.com;
+      frame-ancestors 'none';
+    """
+    
+    # Prevent clickjacking attacks
+    X-Frame-Options = "DENY"
+    
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+    
+    # Enable XSS protection in older browsers
+    X-XSS-Protection = "1; mode=block"
+    
+    # Control referrer information
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Permissions Policy - restrict browser features
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+    
+    # HTTP Strict Transport Security - force HTTPS (only enable after confirming HTTPS works)
+    # Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Cache headers for static assets
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML pages should not be cached as aggressively
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Netlify Forms configuration
+# Forms with the 'netlify' attribute will be automatically processed
+# No additional configuration needed here - just add 'netlify' to your form element
+# Example: <form name="contact" method="POST" netlify>

@@ -1,34 +1,234 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Your Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eighty Six Strategies - Digital Growth & Marketing Solutions</title>
+    <meta name="description" content="Eighty Six Strategies provides innovative digital growth solutions, strategic marketing, and business development services to help your company thrive in the digital age.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Canonical URL - UPDATE THIS with your actual domain -->
+    <link rel="canonical" href="https://eighty-six-strategies.netlify.app/">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+    
     <!-- Google Analytics Tracking Code -->
+    <!-- REPLACE 'GA_MEASUREMENT_ID' with your actual Google Analytics 4 tracking ID -->
+    <!-- Format: G-XXXXXXXXXX (e.g., G-ABC123DEF4) -->
+    <!-- Get your tracking ID from: https://analytics.google.com/analytics/web/ -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
+      
+      // REPLACE 'GA_MEASUREMENT_ID' below with your actual GA4 tracking ID
+      gtag('config', 'GA_MEASUREMENT_ID', {
+        'send_page_view': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Your Page Title" />
-    <meta property="og:description" content="A brief description of your page." />
-    <meta property="og:image" content="URL_to_image" />
-    <meta property="og:url" content="URL_to_your_page" />
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Eighty Six Strategies - Digital Growth & Marketing Solutions" />
+    <meta property="og:description" content="Innovative digital growth solutions, strategic marketing, and business development services to help your company thrive in the digital age." />
+    <meta property="og:image" content="https://eighty-six-strategies.netlify.app/favicon.svg" />
+    <meta property="og:url" content="https://eighty-six-strategies.netlify.app/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Eighty Six Strategies" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eighty Six Strategies - Digital Growth & Marketing Solutions">
+    <meta name="twitter:description" content="Innovative digital growth solutions, strategic marketing, and business development services to help your company thrive in the digital age.">
+    <meta name="twitter:image" content="https://eighty-six-strategies.netlify.app/favicon.svg">
 
-    <!-- JSON-LD Schema Markup -->
+    <!-- JSON-LD Schema Markup for SEO -->
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Your Website Name",
-      "url": "URL_to_your_homepage"
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Eighty Six Strategies",
+      "url": "https://eighty-six-strategies.netlify.app/",
+      "logo": "https://eighty-six-strategies.netlify.app/favicon.svg",
+      "description": "Digital growth and marketing solutions provider specializing in strategic business development and digital transformation.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/eighty-six-strategies",
+        "https://twitter.com/eightysixstrat"
+      ]
     }
     </script>
 </head>
 <body>
-    <h1>Welcome to Your Homepage</h1>
-    <p>Page content goes here...</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">Eighty Six Strategies</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/who-we-help">Who We Help</a></li>
+                <li><a href="/why-us">Why Us</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Accelerate Your Digital Growth</h1>
+                <p class="hero-subtitle">Strategic solutions that drive measurable results for modern businesses</p>
+                <p class="hero-description">
+                    At Eighty Six Strategies, we combine data-driven insights with innovative digital marketing 
+                    to help businesses scale effectively. From startup to enterprise, we deliver customized 
+                    strategies that transform your digital presence and accelerate growth.
+                </p>
+                <div class="hero-cta">
+                    <a href="/contact" class="btn btn-primary">Get Started</a>
+                    <a href="/services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services/Features Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <p class="section-subtitle">Comprehensive digital solutions tailored to your business needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Digital Strategy</h3>
+                    <p>Data-driven strategies that align with your business goals and drive sustainable growth.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Performance Marketing</h3>
+                    <p>ROI-focused campaigns across all digital channels to maximize your marketing investment.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Growth Optimization</h3>
+                    <p>Continuous testing and optimization to improve conversion rates and customer acquisition.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>Brand Development</h3>
+                    <p>Build a compelling brand identity that resonates with your target audience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Social Media Management</h3>
+                    <p>Engage your audience with strategic content and community management across platforms.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>SEO & Content Marketing</h3>
+                    <p>Increase organic visibility with optimized content that drives qualified traffic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Eighty Six Strategies</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>✓ Proven Track Record</h3>
+                    <p>Successful campaigns for businesses across various industries</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Data-Driven Approach</h3>
+                    <p>Every decision backed by analytics and measurable results</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Transparent Reporting</h3>
+                    <p>Clear, comprehensive reporting on campaign performance</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Dedicated Support</h3>
+                    <p>Personal attention from our team of digital experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Grow Your Business?</h2>
+            <p>Let's discuss how we can help you achieve your digital growth goals.</p>
+            <a href="/contact" class="btn btn-primary">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eighty Six Strategies</h3>
+                    <p>Your partner in digital growth and strategic marketing solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/who-we-help">Who We Help</a></li>
+                        <li><a href="/why-us">Why Us</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:info@eightysixstrategies.com">info@eightysixstrategies.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p class="contact-note">Note: Update with your actual contact information</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eighty Six Strategies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
 </body>
 </html>
