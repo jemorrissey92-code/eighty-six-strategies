@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+# Sitemap location
+# IMPORTANT: Replace with your actual domain after deployment
+Sitemap: https://eighty-six-strategies.netlify.app/sitemap.xml
